@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="VCRJI9xdG0lVU91UfQDoqL7F9f5vPkpfHfZ9AS3H5oc" />
     <title>ASHOKA K U | AI/ML Engineer / Data Analyst</title>
     <meta name="description" content="Immersive portfolio of Ashokaku, specializing in AI/ML and Data Science.">
+    <link rel="canonical" href="https://ashokaku.web.app/">
 
     <!-- Fonts: Outfit for clean geo-sans, Editorial New (simulated via high-end serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +15,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.1">
+    <link rel="apple-touch-icon" href="favicon.svg?v=1.1">
+    <meta property="og:image" content="https://ashokaku.web.app/favicon.svg?v=1.1">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Core Libraries for Wow Factor -->
@@ -29,6 +34,28 @@
             emailjs.init("X4igZqpXH6-m2z_2f");
         })();
     </script>
+
+    <!-- Firebase Setup -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBoJ0WWvr1oVqkIi8c_x1vrjZCgiSnD8oA",
+            authDomain: "btm-cafe.firebaseapp.com",
+            projectId: "btm-cafe",
+            storageBucket: "btm-cafe.firebasestorage.app",
+            messagingSenderId: "568222187046",
+            appId: "1:568222187046:web:246dcf26da095f987d70e7",
+            measurementId: "G-9JRBM5QTPX"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </head>
 
 <body>
@@ -41,6 +68,9 @@
                 <div class="ring ring-1"></div>
                 <div class="ring ring-2"></div>
                 <div class="ring ring-3"></div>
+                <div class="preloader-logo">
+                    <img src="favicon.svg?v=1.1" alt="Logo">
+                </div>
             </div>
             <div class="loading-text">ENTERING NEURAL SPACE</div>
             <div class="loading-bar">
@@ -52,7 +82,13 @@
     <div id="canvas-container"></div>
     <nav class="top-nav">
         <div class="nav-container">
-            <div class="logo">ASHOKA K U</div>
+            <a href="#home" class="logo">
+                <img src="favicon.svg?v=1.1" alt="Ashoka K U Logo" class="logo-img">
+                <span>ASHOKA K U</span>
+            </a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -68,7 +104,9 @@
 
     <div id="hud-nav">
         <div class="hud-circle">
-            <div class="hud-dot"></div>
+            <div class="hud-logo">
+                <img src="favicon.svg?v=1.1" alt="Logo">
+            </div>
             <svg viewBox="0 0 100 100">
                 <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
                 <text fill="white" font-size="8" font-family="Outfit" letter-spacing="2">
@@ -160,6 +198,24 @@ Collaborated closely with operations and engineering teams to align OCR outputs 
 business requirements..</p>
                                 </div>
                             </div>
+                            <div class="timeline-item reveal">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="exp-date">OCT 2025 - FEB 2026</span>
+                                    <h3>Data Scientist – Media & Marketing Analytics (Trainee)</h3>
+                                    <p class="exp-org">Spinnaker Analytics</p>
+                                    <p class="exp-desc">Developed Media and Customer Analytics models including Customer Lifetime Value (CLV), customer segmentation, Market Mix Modelling and look-alike audience modeling to support marketing decision-making.<br>Built time-series forecasting models to predict campaign performance metrics such as conversions, engagement, and spend efficiency.<br>Designed Power BI and Tableau dashboards to track KPIs such as CAC, ROAS, LTV, and campaign trends for business stakeholders.<br>Applied NLP techniques to analyse customer feedback, reviews, and media content for sentiment and insight extraction.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item reveal">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="exp-date">JAN 2019 - OCT 2025</span>
+                                    <h3>VFX Analyst</h3>
+                                    <p class="exp-org">Radiance FX | Technicolor | Phantom FX | Omnicom</p>
+                                    <p class="exp-desc">Worked in high-pressure, deadline-driven environments requiring precision, analytical thinking, and cross-team collaboration.<br>Developed strong attention to detail, problem-solving skills, and the ability to deliver high-quality outputs at scale—skills directly transferable to data and analytics roles.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -177,6 +233,13 @@ business requirements..</p>
                                     <p class="exp-desc">Specialized in Deep Learning, NLP, and Generative AI
                                         architectures.
                                         Graduated with honors in technical implementation.</p>
+                                </div>
+                            </div>
+                            <div class="exp-item reveal">
+                                <span class="exp-date">MAY 2018 - MAY 2021</span>
+                                <div class="exp-info">
+                                    <h3>Bachelor’s Degree (PCM)</h3>
+                                    <p class="exp-org">Kuvempu University</p>
                                 </div>
                             </div>
                         </div>
@@ -250,35 +313,143 @@ business requirements..</p>
                     <div class="container">
                         <h2 class="section-label">SELECTED PROJECTS</h2>
                         <div class="project-list">
+                            <!-- New Projects -->
+                            <div class="project-item" data-color="#914BF1">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>MARKETING MIX & PREDICTION</span> <span>PYTHON • POWER BI • TABLEAU</span></div>
+                                        <h3 class="project-title">Media & Customer Analytics Projects</h3>
+                                    </div>
+                                    <div class="project-arrow"><a href="https://github.com/ashokaku/Advanced-Analytics-CLV-Media-Mix-Modeling" target="_blank" style="color: inherit;"><i class="fab fa-github"></i></a></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Built Customer Lifetime Value (CLV) and customer segmentation models to identify high-value customers and improve targeting efficiency.</li>
+                                        <li>Developed Marketing Mix Modeling (MMM) frameworks across multiple channels to optimize budget allocation and measure channel effectiveness.</li>
+                                        <li>Designed and implemented Anomaly Detection Systems to flag abnormal campaign performance and identify data inconsistencies.</li>
+                                        <li>Created forecasting models to predict future engagement and conversion trends for marketing initiatives.</li>
+                                        <li>Conducted A/B testing for new ad creatives and campaign strategies; identified that the existing ad outperformed the new variant, preventing inefficient budget reallocation and improving decision-making accuracy. <a href="https://github.com/ashokaku/Media-Data-Science-A-B-Testing" target="_blank">(View A/B Testing Repo)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="project-item" data-color="#FF5D22">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>GEN AI PIPELINE</span> <span>LLMs • LORA • OCR</span></div>
+                                        <h3 class="project-title">AI-Powered Logistics Document Extraction</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Built OCR + LLM pipeline extracting 50+ business fields from PDFs.</li>
+                                        <li>Fine-tuned a 7B LLM using LoRA, achieving up to 95% accuracy on critical fields.</li>
+                                        <li>Automated workflows saving 100+ hours/week.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="https://geekyants.up.railway.app/" target="_blank" class="project-item" data-color="#00FFAA" style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>AI ASSISTANT</span> <span>FAISS • FASTAPI</span></div>
+                                        <h3 class="project-title">RAG-Based AI Chatbot</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-external-link-alt"></i></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Built a Retrieval-Augmented Generation system using FAISS and sentence embeddings.</li>
+                                        <li>Integrated multiple LLM providers with FastAPI backend.</li>
+                                        <li>Deployed via Railway link available to test live online.</li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/ashokaku/E-commerce-Customer-Segmentation-and-Prediction" target="_blank" class="project-item" data-color="#FF00FF" style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>MACHINE LEARNING</span> <span>CLUSTERING • POWER BI</span></div>
+                                        <h3 class="project-title">E-commerce Segmentation & Prediction</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fab fa-github"></i></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Analysed e-commerce customer data using Python and Power BI to uncover purchasing patterns and behaviour trends.</li>
+                                        <li>Applied clustering to segment customers and built predictive models to forecast buying behaviour.</li>
+                                        <li>Developed interactive Power BI dashboards showcasing key metrics such as customer value, retention, and engagement, delivering actionable insights to improve marketing strategies and drive revenue growth.</li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/ashokaku/Fraud-Detection-Using-Machine-Learning" target="_blank" class="project-item" data-color="#00D4FF" style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>MACHINE LEARNING</span> <span>XGBOOST • SMOTE</span></div>
+                                        <h3 class="project-title">Credit Card Fraud Detection</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fab fa-github"></i></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Developed ML models (Logistic Regression, Random Forest, XGBoost) on 284K+ transactions.</li>
+                                        <li>Handled imbalanced datasets using SMOTE and advanced resampling techniques.</li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <!-- Original Dashboard Projects -->
                             <a href="https://app.powerbi.com/view?r=eyJrIjoiYmMwYTE1Y2EtMjU1Ni00MzVlLWJiNDYtMTAwNWI4OTk2ZTk3IiwidCI6IjgzNDMxODQ1LTFjODAtNDU3ZS1iMjdiLTY2YzYxYjVlYzVlOCJ9"
-                                target="_blank" class="project-item" data-color="#914BF1">
-                                <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
-                                <h3 class="project-title">Coffee Shop Analysis</h3>
-                                <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                target="_blank" class="project-item" data-color="#914BF1" style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
+                                        <h3 class="project-title">Coffee Shop Analysis</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
                             </a>
                             <a href="https://app.powerbi.com/view?r=eyJrIjoiNmY1YTRmYWEtN2MyZC00NTAzLTlmNGMtNDJhZDMyZGNhYTBiIiwidCI6IjgzNDMxODQ1LTFjODAtNDU3ZS1iMjdiLTY2YzYxYjVlYzVlOCJ9"
-                                target="_blank" class="project-item" data-color="#FF5D22">
-                                <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
-                                <h3 class="project-title">Customer segmentation Using ML</h3>
-                                <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                target="_blank" class="project-item" data-color="#FF5D22" style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
+                                        <h3 class="project-title">Customer segmentation Using ML</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
                             </a>
                             <a href="https://app.powerbi.com/view?r=eyJrIjoiNGE3MDg3OWUtZTQ2My00MjVhLWJmYzgtYjUzMDVmYTgzMjY1IiwidCI6IjgzNDMxODQ1LTFjODAtNDU3ZS1iMjdiLTY2YzYxYjVlYzVlOCJ9"
-                                target="_blank" class="project-item" data-color="#00FFAA">
-                                <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
-                                <h3 class="project-title">FitZone Gyms analysis</h3>
-                                <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                target="_blank" class="project-item" data-color="#00FFAA" style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
+                                        <h3 class="project-title">FitZone Gyms analysis</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
                             </a>
                             <a href="https://app.powerbi.com/view?r=eyJrIjoiNDhkYjYzOWYtMTE1Mi00YmE5LThkNzQtNDJiZWFlMGUxZTBkIiwidCI6IjgzNDMxODQ1LTFjODAtNDU3ZS1iMjdiLTY2YzYxYjVlYzVlOCJ9"
-                                target="_blank" class="project-item" data-color="#FF00FF">
-                                <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
-                                <h3 class="project-title">Household Energy Consumption Overview</h3>
-                                <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                target="_blank" class="project-item" data-color="#FF00FF" style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
+                                        <h3 class="project-title">Household Energy Consumption Overview</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
                             </a>
                             <a href="https://public.tableau.com/app/profile/ashok.ku7369/viz/HRDashboard_17530164204920/HRSummery"
-                                target="_blank" class="project-item" data-color="#00D4FF">
-                                <div class="project-meta"><span>TABLEAU</span> <span>2024</span></div>
-                                <h3 class="project-title">HR Dynamics</h3>
-                                <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                target="_blank" class="project-item" data-color="#00D4FF" style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>TABLEAU</span> <span>2024</span></div>
+                                        <h3 class="project-title">HR Dynamics</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
                             </a>
                         </div>
                     </div>
@@ -310,6 +481,9 @@ business requirements..</p>
                             <a href="https://github.com/ashokaku" target="_blank" class="c-link">GitHub</a>
                             <a href="tel:+917259615116" class="c-link">Phone</a>
                         </div>
+                        <div class="footer-logo">
+                            <img src="favicon.svg?v=1.1" alt="Ashoka K U Logo" class="f-logo">
+                        </div>
                         <p class="copyright">© 2026 ASHOKA K U • BENGALURU, IN</p>
                     </div>
                 </footer>
@@ -318,7 +492,7 @@ business requirements..</p>
         </main>
     </div><!-- Close main-content -->
 
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
 </body>
 
 </html>
