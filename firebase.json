@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "site": "ashokaku",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/index.html",
+        "destination": "/",
+        "type": 301
+      }
+    ]
+  }
+}
