@@ -631,6 +631,19 @@
             color: #ffffff !important;
             background-color: #161a23 !important;
         }
+
+        /* Mobile specific overrides to prevent full-screen takeover */
+        @media (max-width: 768px) {
+            .chat-layout {
+                max-width: 90vw !important;
+                max-height: 70vh !important;
+                bottom: 85px !important;
+                right: 5vw !important;
+                border-radius: 20px !important;
+                top: auto !important;
+                left: auto !important;
+            }
+        }
     </style>
 </body>
 
