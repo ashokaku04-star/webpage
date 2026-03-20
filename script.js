@@ -585,7 +585,12 @@ window.onload = () => {
                         btn.style.background = "white";
                     }, 3000);
                 }, (err) => {
-                    btnText.innerText = "ERROR - RETRY";
+                    if (err.status === 412) {
+                        btnText.innerText = "GMAIL DISCONNECTED";
+                        alert("EmailJS Error: Your Gmail account is disconnected. Please reconnect it in the EmailJS dashboard.\n\n" + (err.text || "Invalid grant"));
+                    } else {
+                        btnText.innerText = "ERROR - RETRY";
+                    }
                     btn.style.background = "#FF5D22";
                     btn.style.opacity = "1";
                     console.error("EmailJS Error:", err);
