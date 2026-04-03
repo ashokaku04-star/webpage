@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="722be04e6cd8cc44" />
+    <meta name="google-site-verification" content="311c9ca40822812c" />
+    <title>Ashoka K U | AI & Machine Learning Engineer | Data Analyst Portfolio</title>
+    <meta name="description"
+        content="Official portfolio of Ashoka K U (also known as Ashok or Ashokaku). AI/ML Engineer specializing in RAG systems, predictive analytics, and GenAI solutions. Based in Bengaluru, originally from Krishnagiri.">
+    <meta name="keywords"
+        content="Ashoka K U, Ashoka, Ashok, Ashokaku, Ashoka Krishnagiri, Ashoka KU, Ashoka K U Krishnagiri, ashoka k u, AI Engineer, Machine Learning Engineer, Data Analyst, Portfolio">
+    <link rel="canonical" href="https://ashokaku.netlify.app/">
+
+    <!-- JSON-LD Structured Data for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ashoka K U",
+      "alternateName": ["Ashok", "Ashokaku", "Ashoka Krishnagiri", "Ashoka KU", "Ashoka K U Krishnagiri", "ashoka k u"],
+      "url": "https://ashokaku.netlify.app/",
+      "jobTitle": "AI & Machine Learning Engineer",
+      "image": "https://ashokaku.netlify.app/favicon.svg?v=1.2",
+      "sameAs": [
+        "https://github.com/ashokaku"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "addressCountry": "India"
+      }
+    }
+    </script>
+
+    <!-- Fonts: Outfit for clean geo-sans, Editorial New (simulated via high-end serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.2">
+    <link rel="shortcut icon" href="favicon.svg?v=1.2">
+    <link rel="apple-touch-icon" href="favicon.svg?v=1.2">
+    <meta property="og:image" content="https://ashokaku.netlify.app/favicon.svg?v=1.2">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Core Libraries for Wow Factor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // Updated with your Public Key
+            emailjs.init("X4igZqpXH6-m2z_2f");
+        })();
+    </script>
+
+    <!-- Firebase Setup -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBoJ0WWvr1oVqkIi8c_x1vrjZCgiSnD8oA",
+            authDomain: "btm-cafe.firebaseapp.com",
+            projectId: "btm-cafe",
+            storageBucket: "btm-cafe.firebasestorage.app",
+            messagingSenderId: "568222187046",
+            appId: "1:568222187046:web:246dcf26da095f987d70e7",
+            measurementId: "G-9JRBM5QTPX"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</head>
+
+<body>
+    <!-- Advanced Space Preloader -->
+    <div id="preloader">
+        <canvas id="preloader-canvas"></canvas>
+        <div class="preloader-content">
+            <div class="portal-vortex"></div>
+            <div class="warp-rings">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+                <div class="preloader-logo">
+                    <img src="favicon.svg?v=1.1" alt="Logo">
+                </div>
+            </div>
+            <div class="loading-text">ENTERING NEURAL SPACE</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="canvas-container"></div>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="favicon.svg?v=1.1" alt="Ashoka K U Logo" class="logo-img">
+                <span>ASHOKA K U</span>
+            </a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div id="custom-cursor" aria-hidden="true"></div>
+
+    <div id="hud-nav">
+        <div class="hud-circle">
+            <div class="hud-logo">
+                <img src="favicon.svg?v=1.1" alt="Logo">
+            </div>
+            <svg viewBox="0 0 100 100">
+                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+                <text fill="white" font-size="8" font-family="Outfit" letter-spacing="2">
+                    <textPath xlink:href="#circlePath">EXP • VIZ • AI • DATA • PROJ • </textPath>
+                </text>
+            </svg>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <div class="noise-overlay"></div>
+
+        <main id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <!-- Section 1: The Neural Void -->
+                <section class="panel hero-panel" id="home">
+                    <div class="container hero-container">
+                        <div class="label-reveal"><span class="label">AI/ML Engineer / Data Analyst</span></div>
+                        <h1 class="main-title">
+                            <div class="line"><span>Turning Data</span></div>
+                            <div class="line"><span class="serif-italic">into Reality.</span></div>
+                        </h1>
+                        <div class="hero-footer">
+                            <p class="hero-desc">AI/ML Engineer specializing in predictive maintenance & GenAI
+                                architectures.</p>
+                            <div class="scroll-indicator">
+                                <span class="scroll-text"></span>
+                                <div class="scroll-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 1.5: About Me -->
+                <section class="panel about-panel" id="about">
+                    <div class="container grid-container">
+                        <div class="expertise-left">
+                            <h2 class="title-xl">About <br>Me</h2>
+                            <p class="viz-highlight">"Transforming complex data into actionable insights."</p>
+                            <a href="https://drive.google.com/uc?export=download&id=1zNIkz1YsJv1AuNu1YRAzB8gCmjzH0qms"
+                                download="ASHOKA_K_U_Resume.pdf" target="_blank" class="resume-btn"
+                                style="margin-top: 2rem; display: inline-block;">
+                                <span>DOWNLOAD CV</span>
+                                <div class="btn-glow"></div>
+                            </a>
+                        </div>
+                        <div class="expertise-right">
+                            <div class="exp-info reveal">
+                                <p class="exp-desc">I am a Data Scientist specializing in turning complex data into
+                                    actionable insights through advanced analytics, interactive dashboards, and machine
+                                    learning solutions. With a focus on bridging technical and business domains, I
+                                    architect
+                                    intelligent systems that solve real-world challenges.</p>
+                                <p class="exp-desc" style="margin-top: 2rem;">..</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="panel experience-panel" id="experience">
+                    <div class="container">
+                        <h2 class="section-label">THE JOURNEY</h2>
+                        <div class="timeline">
+                            <!-- Marker for future updates -->
+                            <div class="timeline-item future">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="exp-date">FUTURE</span>
+                                    <h3>Next Evolution...</h3>
+                                </div>
+                            </div>
+                            <div class="timeline-item reveal">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="exp-date">OCT 2024 - PRESENT</span>
+                                    <h3>AI/ML Engineer</h3>
+                                    <p class="exp-org">Big Wings LLC</p>
+                                    <p class="exp-desc">Designed and implemented an OCR-based document processing system
+                                        to automatically extract data
+                                        from Rate Confirmation (RateCon) documents received via email.
+                                        Built end-to-end pipelines to parse, validate, and ingest extracted data into
+                                        the Transportation
+                                        Management System (TMS), significantly reducing manual data entry.
+                                        Applied NLP techniques to handle unstructured and semi-structured document
+                                        formats with varying
+                                        layouts.
+                                        Improved processing speed and data accuracy, enabling faster load creation and
+                                        operational workflows.
+                                        Implemented data validation and deduplication logic to minimize errors and
+                                        ensure data consistency.
+                                        Collaborated closely with operations and engineering teams to align OCR outputs
+                                        with real-world
+                                        business requirements..</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item reveal">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="exp-date">OCT 2025 - FEB 2026</span>
+                                    <h3>Data Scientist – Media & Marketing Analytics (Trainee)</h3>
+                                    <p class="exp-org">Spinnaker Analytics</p>
+                                    <p class="exp-desc">Developed Media and Customer Analytics models including Customer
+                                        Lifetime Value (CLV), customer segmentation, Market Mix Modelling and look-alike
+                                        audience modeling to support marketing decision-making.<br>Built time-series
+                                        forecasting models to predict campaign performance metrics such as conversions,
+                                        engagement, and spend efficiency.<br>Designed Power BI and Tableau dashboards to
+                                        track KPIs such as CAC, ROAS, LTV, and campaign trends for business
+                                        stakeholders.<br>Applied NLP techniques to analyse customer feedback, reviews,
+                                        and media content for sentiment and insight extraction.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item reveal">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="exp-date">JAN 2019 - OCT 2025</span>
+                                    <h3>VFX Analyst</h3>
+                                    <p class="exp-org">Radiance FX | Technicolor | Phantom FX | Omnicom</p>
+                                    <p class="exp-desc">Worked in high-pressure, deadline-driven environments requiring
+                                        precision, analytical thinking, and cross-team collaboration.<br>Developed
+                                        strong attention to detail, problem-solving skills, and the ability to deliver
+                                        high-quality outputs at scale—skills directly transferable to data and analytics
+                                        roles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3: Education (Scientific Foundation) -->
+                <section class="panel education-panel" id="education">
+                    <div class="container">
+                        <h2 class="section-label">EDUCATION</h2>
+                        <div class="exp-grid">
+                            <div class="exp-item reveal">
+                                <span class="exp-date">2024 - 2025</span>
+                                <div class="exp-info">
+                                    <h3>Master Diploma in Data Science & AI</h3>
+                                    <p class="exp-org">Boston Analytics Institute</p>
+                                    <p class="exp-desc">Specialized in Deep Learning, NLP, and Generative AI
+                                        architectures.
+                                        Graduated with honors in technical implementation.</p>
+                                </div>
+                            </div>
+                            <div class="exp-item reveal">
+                                <span class="exp-date">MAY 2018 - MAY 2021</span>
+                                <div class="exp-info">
+                                    <h3>Bachelor’s Degree (PCM)</h3>
+                                    <p class="exp-org">Kuvempu University</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Section 4.5: Detailed Skills & Expertise -->
+                <section class="panel skills-detail-panel" id="skills">
+                    <div class="container">
+                        <h2 class="section-label">TECHNICAL ECOSYSTEM</h2>
+                        <div class="skills-bento">
+                            <!-- 01: Generative AI & NLP -->
+                            <div class="bento-item ai-genai">
+                                <div class="bento-content">
+                                    <span class="bento-tag">01</span>
+                                    <h3>Generative AI & NLP</h3>
+                                    <div class="skill-chips">
+                                        <span>LLMs</span>
+                                        <span>RAG</span>
+                                        <span>Transformers</span>
+                                        <span>Generative AI</span>
+                                        <span>NLP</span>
+                                    </div>
+                                    <p class="bento-desc">Architecting neural systems for automated reasoning and
+                                        intelligent information retrieval.</p>
+                                </div>
+                                <div class="bento-bg"></div>
+                            </div>
+
+                            <!-- 02: Predictive Modeling -->
+                            <div class="bento-item ml">
+                                <div class="bento-content">
+                                    <span class="bento-tag">02</span>
+                                    <h3>Predictive Modeling</h3>
+                                    <div class="skill-chips">
+                                        <span>Regression</span>
+                                        <span>Classification</span>
+                                        <span>Clustering</span>
+                                        <span>Feature Eng.</span>
+                                        <span>Anomaly Detection</span>
+                                    </div>
+                                    <p class="bento-desc">Building robust statistical engines for fraud detection and
+                                        complex pattern recognition.</p>
+                                </div>
+                                <div class="bento-bg"></div>
+                            </div>
+
+                            <!-- 03: Marketing Analytics -->
+                            <div class="bento-item media">
+                                <div class="bento-content">
+                                    <span class="bento-tag">03</span>
+                                    <h3>Marketing Analytics</h3>
+                                    <div class="skill-chips">
+                                        <span>CLV</span>
+                                        <span>Campaign Opt.</span>
+                                        <span>Look-Alike Modeling</span>
+                                        <span>Funnel Analysis</span>
+                                        <span>Time-Series</span>
+                                    </div>
+                                    <p class="bento-desc">Optimizing marketing ROI through customer behavior modeling
+                                        and performance analysis.</p>
+                                </div>
+                                <div class="bento-bg"></div>
+                            </div>
+
+                            <!-- 04: Business Intelligence -->
+                            <div class="bento-item analytics">
+                                <div class="bento-content">
+                                    <span class="bento-tag">04</span>
+                                    <h3>Business Intel</h3>
+                                    <div class="skill-chips">
+                                        <span>Power BI</span>
+                                        <span>Tableau</span>
+                                        <span>KPI Dashboards</span>
+                                        <span>Executive Reporting</span>
+                                        <span>MS Excel</span>
+                                    </div>
+                                    <p class="bento-desc">Translating raw data into strategic clarity via high-fidelity
+                                        dashboards and dashboards.</p>
+                                </div>
+                                <div class="bento-bg"></div>
+                            </div>
+
+                            <!-- 05: Engineering & Big Data -->
+                            <div class="bento-item programming">
+                                <div class="bento-content">
+                                    <span class="bento-tag">05</span>
+                                    <h3>Data Engineering</h3>
+                                    <div class="skill-chips">
+                                        <span>Python</span>
+                                        <span>Pandas / NumPy</span>
+                                        <span>SQL</span>
+                                        <span>Spark</span>
+                                    </div>
+                                    <p class="bento-desc">Developing scalable data pipelines and high-performance
+                                        computation architectures.</p>
+                                </div>
+                                <div class="bento-bg"></div>
+                            </div>
+
+                            <!-- 06: Deep Learning -->
+                            <div class="bento-item dl">
+                                <div class="bento-content">
+                                    <span class="bento-tag">06</span>
+                                    <h3>Deep Learning</h3>
+                                    <div class="skill-chips">
+                                        <span>TensorFlow</span>
+                                        <span>PyTorch</span>
+                                        <span>Scikit-learn</span>
+                                        <span>Neural Networks</span>
+                                    </div>
+                                    <p class="bento-desc">Implementation of advanced DL frameworks for vision, speech,
+                                        and sequence modeling.</p>
+                                </div>
+                                <div class="bento-bg"></div>
+                            </div>
+
+                            <!-- 07: Cloud Infrastructure -->
+                            <div class="bento-item platforms">
+                                <div class="bento-content">
+                                    <span class="bento-tag">07</span>
+                                    <h3>Cloud Platforms</h3>
+                                    <div class="skill-chips">
+                                        <span>Databricks</span>
+                                        <span>Snowflake</span>
+                                        <span>Azure</span>
+                                        <span>PostgreSQL</span>
+                                        <span>MySQL</span>
+                                    </div>
+                                    <p class="bento-desc">Managing distributed data environments across cloud-native and
+                                        legacy architectures.</p>
+                                </div>
+                                <div class="bento-bg"></div>
+                            </div>
+
+                            <!-- 08: Productivity & ETL -->
+                            <div class="bento-item tools">
+                                <div class="bento-content">
+                                    <span class="bento-tag">08</span>
+                                    <h3>Productivity Tools</h3>
+                                    <div class="skill-chips">
+                                        <span>Git / GitHub</span>
+                                        <span>Jupyter Notebook</span>
+                                        <span>Alteryx</span>
+                                    </div>
+                                    <p class="bento-desc">Optimizing the end-to-end development lifecycle with essential
+                                        ETL and versioning tools.</p>
+                                </div>
+                                <div class="bento-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3: Project Portals -->
+                <section class="panel projects-panel" id="projects">
+                    <div class="container">
+                        <h2 class="section-label">SELECTED PROJECTS</h2>
+
+                        <div class="filter-bar">
+                            <button class="filter-btn active" data-filter="all">ALL</button>
+                            <button class="filter-btn" data-filter="ai-genai">AI & GEN-AI</button>
+                            <button class="filter-btn" data-filter="machine-learning">MACHINE LEARNING</button>
+                            <button class="filter-btn" data-filter="data-analytics">DATA ANALYTICS</button>
+                        </div>
+
+                        <div class="project-grid">
+                            <!-- New Projects -->
+                            <div class="project-item" data-color="#914BF1" data-category="machine-learning">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>MARKETING MIX & PREDICTION</span> <span>PYTHON •
+                                                POWER BI • TABLEAU</span></div>
+                                        <h3 class="project-title">Media & Customer Analytics Projects</h3>
+                                    </div>
+                                    <div class="project-arrow"><a
+                                            href="https://github.com/ashokaku/Advanced-Analytics-CLV-Media-Mix-Modeling"
+                                            target="_blank" style="color: inherit;"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Built Customer Lifetime Value (CLV) and customer segmentation models to
+                                            identify high-value customers and improve targeting efficiency.</li>
+                                        <li>Developed Marketing Mix Modeling (MMM) frameworks across multiple channels
+                                            to optimize budget allocation and measure channel effectiveness.</li>
+                                        <li>Designed and implemented Anomaly Detection Systems to flag abnormal campaign
+                                            performance and identify data inconsistencies.</li>
+                                        <li>Created forecasting models to predict future engagement and conversion
+                                            trends for marketing initiatives.</li>
+                                        <li>Conducted A/B testing for new ad creatives and campaign strategies;
+                                            identified that the existing ad outperformed the new variant, preventing
+                                            inefficient budget reallocation and improving decision-making accuracy. <a
+                                                href="https://github.com/ashokaku/Media-Data-Science-A-B-Testing"
+                                                target="_blank">(View A/B Testing Repo)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="project-item" data-color="#FF5D22" data-category="ai-genai">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>GEN AI PIPELINE</span> <span>LLMs • LORA •
+                                                OCR</span></div>
+                                        <h3 class="project-title">AI-Powered Logistics Document Extraction</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Built OCR + LLM pipeline extracting 50+ business fields from PDFs.</li>
+                                        <li>Fine-tuned a 7B LLM using LoRA, achieving up to 95% accuracy on critical
+                                            fields.</li>
+                                        <li>Automated workflows saving 100+ hours/week.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="https://geekyants.up.railway.app/" target="_blank" class="project-item"
+                                data-color="#00FFAA" data-category="ai-genai"
+                                style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>AI ASSISTANT</span> <span>FAISS • FASTAPI</span>
+                                        </div>
+                                        <h3 class="project-title">RAG-Based AI Chatbot</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-external-link-alt"></i></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Built a Retrieval-Augmented Generation system using FAISS and sentence
+                                            embeddings.</li>
+                                        <li>Integrated multiple LLM providers with FastAPI backend.</li>
+                                        <li>Deployed via Railway link available to test live online.</li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/ashokaku/E-commerce-Customer-Segmentation-and-Prediction"
+                                target="_blank" class="project-item" data-color="#FF00FF"
+                                data-category="machine-learning"
+                                style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>MACHINE LEARNING</span> <span>CLUSTERING • POWER
+                                                BI</span></div>
+                                        <h3 class="project-title">E-commerce Segmentation & Prediction</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fab fa-github"></i></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Analysed e-commerce customer data using Python and Power BI to uncover
+                                            purchasing patterns and behaviour trends.</li>
+                                        <li>Applied clustering to segment customers and built predictive models to
+                                            forecast buying behaviour.</li>
+                                        <li>Developed interactive Power BI dashboards showcasing key metrics such as
+                                            customer value, retention, and engagement, delivering actionable insights to
+                                            improve marketing strategies and drive revenue growth.</li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/ashokaku/Fraud-Detection-Using-Machine-Learning" target="_blank"
+                                class="project-item" data-color="#00D4FF" data-category="machine-learning"
+                                style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>MACHINE LEARNING</span> <span>XGBOOST •
+                                                SMOTE</span></div>
+                                        <h3 class="project-title">Credit Card Fraud Detection</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fab fa-github"></i></div>
+                                </span>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Developed ML models (Logistic Regression, Random Forest, XGBoost) on 284K+
+                                            transactions.</li>
+                                        <li>Handled imbalanced datasets using SMOTE and advanced resampling techniques.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+
+                            <!-- Original Dashboard Projects -->
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiYmMwYTE1Y2EtMjU1Ni00MzVlLWJiNDYtMTAwNWI4OTk2ZTk3IiwidCI6IjgzNDMxODQ1LTFjODAtNDU3ZS1iMjdiLTY2YzYxYjVlYzVlOCJ9"
+                                target="_blank" class="project-item" data-color="#914BF1" data-category="data-analytics"
+                                style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
+                                        <h3 class="project-title">Coffee Shop Analysis</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
+                            </a>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNmY1YTRmYWEtN2MyZC00NTAzLTlmNGMtNDJhZDMyZGNhYTBiIiwidCI6IjgzNDMxODQ1LTFjODAtNDU3ZS1iMjdiLTY2YzYxYjVlYzVlOCJ9"
+                                target="_blank" class="project-item" data-color="#FF5D22" data-category="data-analytics"
+                                style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
+                                        <h3 class="project-title">Customer segmentation Using ML</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
+                            </a>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNGE3MDg3OWUtZTQ2My00MjVhLWJmYzgtYjUzMDVmYTgzMjY1IiwidCI6IjgzNDMxODQ1LTFjODAtNDU3ZS1iMjdiLTY2YzYxYjVlYzVlOCJ9"
+                                target="_blank" class="project-item" data-color="#00FFAA" data-category="data-analytics"
+                                style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
+                                        <h3 class="project-title">FitZone Gyms analysis</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
+                            </a>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDhkYjYzOWYtMTE1Mi00YmE5LThkNzQtNDJiZWFlMGUxZTBkIiwidCI6IjgzNDMxODQ1LTFjODAtNDU3ZS1iMjdiLTY2YzYxYjVlYzVlOCJ9"
+                                target="_blank" class="project-item" data-color="#FF00FF" data-category="data-analytics"
+                                style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>POWER BI</span> <span>2024</span></div>
+                                        <h3 class="project-title">Household Energy Consumption Overview</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
+                            </a>
+                            <a href="https://public.tableau.com/app/profile/ashok.ku7369/viz/HRDashboard_17530164204920/HRSummery"
+                                target="_blank" class="project-item" data-color="#00D4FF" data-category="data-analytics"
+                                style="text-decoration: none; display: flex; flex-direction: column;">
+                                <span class="project-header">
+                                    <div>
+                                        <div class="project-meta"><span>TABLEAU</span> <span>2024</span></div>
+                                        <h3 class="project-title">HR Dynamics</h3>
+                                    </div>
+                                    <div class="project-arrow"><i class="fas fa-chart-bar"></i></div>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="panel contact-panel" id="contact">
+                    <div class="container contact-content">
+                        <h2 class="big-cta">Ready for the <br><span class="vivid">next evolution?</span></h2>
+
+                        <form id="contact-form" class="reveal">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="TELL ME ABOUT YOUR PROJECT"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>SEND TRANSMISSION</span>
+                                <div class="btn-glow"></div>
+                            </button>
+                        </form>
+
+                        <div class="contact-links-grid">
+                            <a href="mailto:ashokaku04@gmail.com" class="c-link">Email</a>
+                            <a href="https://github.com/ashokaku" target="_blank" class="c-link">GitHub</a>
+                            <a href="tel:+917259615116" class="c-link">Phone</a>
+                        </div>
+                        <div class="footer-logo">
+                            <img src="favicon.svg?v=1.1" alt="Ashoka K U Logo" class="f-logo">
+                        </div>
+                        <p class="copyright">© 2026 ASHOKA K U • BENGALURU | KRISHNAGIRI, IN</p>
+                    </div>
+                </footer>
+
+            </div>
+        </main>
+    </div><!-- Close main-content -->
+
+    <script src="script.js?v=3"></script>
+
+    <!-- n8n Chat Widget -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://n8n.virentstudio.com/webhook/15bacd2a-213e-4312-ad5f-838a85e0131a/chat',
+            initialMessages: [
+                'Hi there! 👋',
+                "I am **Nexus**, Ashoka's Neural Assistant. How can I assist you today?"
+            ],
+            i18n: {
+                en: {
+                    title: "ASHOKA'S AI ASSISTANT",
+                    subtitle: "Connect with the AI model for rapid insights.",
+                },
+            },
+            showWelcomeScreen: true
+        });
+    </script>
+    <style>
+        /* Customizing n8n to match the existing theme */
+        :root {
+            /* Branding colors */
+            --chat--color--primary: #914BF1;
+            --chat--color--primary-shade-50: #a365f5;
+            --chat--color--primary--shade-100: #8c3ceb;
+            --chat--color--secondary: #00D4FF;
+            --chat--color-secondary-shade-50: #00bce6;
+
+            /* Component colors */
+            --chat--color-white: #ffffff;
+            --chat--color-light: #161a23;
+            /* Darker than default, fits theme */
+            --chat--color-dark: #080c12;
+
+            /* Header */
+            --chat--header--background: #080c12;
+            --chat--header--color: #ffffff;
+            --chat--header--border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+            /* Window & Body */
+            --chat--window--background: #080c12;
+            --chat--window--border: 1px solid rgba(255, 255, 255, 0.15);
+            --chat--window--border-radius: 24px;
+            --chat--body--background: #0a0e16;
+            --chat--footer--background: #0a0e16;
+            --chat--footer--border-top: none;
+
+            /* Messages */
+            --chat--message--bot--background: rgba(255, 255, 255, 0.04);
+            --chat--message--bot--color: rgba(255, 255, 255, 0.9);
+            --chat--message--bot--border: 1px solid rgba(255, 255, 255, 0.1);
+
+            --chat--message--user--background: rgba(145, 75, 241, 0.25);
+            --chat--message--user--color: #ffffff;
+            --chat--message--user--border: 1px solid rgba(145, 75, 241, 0.4);
+
+            /* Input Area */
+            --chat--input--container--background: #0a0e16;
+            --chat--input--background: #161a23;
+            --chat--input--text-color: #ffffff;
+            --chat--input--border: 1px solid rgba(255, 255, 255, 0.2);
+            --chat--input--border-radius: 12px;
+
+            /* Buttons */
+            --chat--toggle--background: #914BF1;
+            --chat--toggle--hover--background: #a365f5;
+            --chat--toggle--active--background: #8c3ceb;
+            --chat--input--send--button--background: #914BF1;
+            --chat--input--send--button--color: #ffffff;
+            --chat--input--send--button--background-hover: #a365f5;
+            --chat--input--send--button--color-hover: #ffffff;
+        }
+
+        /* Additional overrides to fit perfectly */
+        .chat-layout {
+            font-family: 'Outfit', sans-serif !important;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(145, 75, 241, 0.1) !important;
+        }
+
+        .chat-input {
+            color: #ffffff !important;
+            background-color: #161a23 !important;
+        }
+
+        /* Mobile specific overrides to prevent full-screen takeover */
+        @media (max-width: 768px) {
+            .chat-layout {
+                max-width: 90vw !important;
+                max-height: 70vh !important;
+                bottom: 85px !important;
+                right: 5vw !important;
+                border-radius: 20px !important;
+                top: auto !important;
+                left: auto !important;
+            }
+        }
+    </style>
+</body>
+
+</html>
