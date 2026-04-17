@@ -11,7 +11,7 @@
         content="Official portfolio of Ashoka K U (also known as Ashok or Ashokaku). AI/ML Engineer specializing in RAG systems, predictive analytics, and GenAI solutions. Based in Bengaluru, originally from Krishnagiri.">
     <meta name="keywords"
         content="Ashoka K U, Ashoka, Ashok, Ashokaku, Ashoka Krishnagiri, Ashoka KU, Ashoka K U Krishnagiri, ashoka k u, AI Engineer, Machine Learning Engineer, Data Analyst, Portfolio">
-    <link rel="canonical" href="https://ashokaku.netlify.app/">
+    <link rel="canonical" href="https://ashokaku.web.app/">
 
     <!-- JSON-LD Structured Data for Search Engines -->
     <script type="application/ld+json">
@@ -20,9 +20,9 @@
       "@type": "Person",
       "name": "Ashoka K U",
       "alternateName": ["Ashok", "Ashokaku", "Ashoka Krishnagiri", "Ashoka KU", "Ashoka K U Krishnagiri", "ashoka k u"],
-      "url": "https://ashokaku.netlify.app/",
+      "url": "https://ashokaku.web.app/",
       "jobTitle": "AI & Machine Learning Engineer",
-      "image": "https://ashokaku.netlify.app/favicon.svg?v=1.2",
+      "image": "https://ashokaku.web.app/favicon.svg?v=1.2",
       "sameAs": [
         "https://github.com/ashokaku"
       ],
@@ -44,7 +44,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.2">
     <link rel="shortcut icon" href="favicon.svg?v=1.2">
     <link rel="apple-touch-icon" href="favicon.svg?v=1.2">
-    <meta property="og:image" content="https://ashokaku.netlify.app/favicon.svg?v=1.2">
+    <meta property="og:image" content="https://ashokaku.web.app/favicon.svg?v=1.2">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
 
     <link rel="stylesheet" href="style.css?v=3">
@@ -58,7 +58,7 @@
     <script type="text/javascript">
         (function () {
             // Updated with your Public Key
-            emailjs.init("X4igZqpXH6-m2z_2f");
+            emailjs.init("___EMAILJS_PUBLIC_KEY___");
         })();
     </script>
 
@@ -70,13 +70,13 @@
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
-            apiKey: "AIzaSyBoJ0WWvr1oVqkIi8c_x1vrjZCgiSnD8oA",
-            authDomain: "btm-cafe.firebaseapp.com",
-            projectId: "btm-cafe",
-            storageBucket: "btm-cafe.firebasestorage.app",
-            messagingSenderId: "568222187046",
-            appId: "1:568222187046:web:246dcf26da095f987d70e7",
-            measurementId: "G-9JRBM5QTPX"
+            apiKey: "___FIREBASE_API_KEY___",
+            authDomain: "___FIREBASE_AUTH_DOMAIN___",
+            projectId: "___FIREBASE_PROJECT_ID___",
+            storageBucket: "___FIREBASE_STORAGE_BUCKET___",
+            messagingSenderId: "___FIREBASE_MESSAGING_SENDER_ID___",
+            appId: "___FIREBASE_APP_ID___",
+            measurementId: "___FIREBASE_MEASUREMENT_ID___"
         };
 
         // Initialize Firebase
@@ -144,8 +144,14 @@
     </div>
 
     <div class="main-content">
-
         <div class="noise-overlay"></div>
+
+        <!-- Premium Background Orbs -->
+        <div class="glow-container">
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+            <div class="glow-orb orb-3"></div>
+        </div>
 
         <main id="smooth-wrapper">
             <div id="smooth-content">
@@ -211,7 +217,7 @@
                             <div class="timeline-item reveal">
                                 <div class="timeline-marker"></div>
                                 <div class="timeline-content">
-                                    <span class="exp-date">OCT 2024 - PRESENT</span>
+                                    <span class="exp-date">NOV 2025 - PRESENT</span>
                                     <h3>AI/ML Engineer</h3>
                                     <p class="exp-org">Big Wings LLC</p>
                                     <p class="exp-desc">Designed and implemented an OCR-based document processing system
@@ -676,7 +682,7 @@
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
         createChat({
-            webhookUrl: 'https://n8n.virentstudio.com/webhook/15bacd2a-213e-4312-ad5f-838a85e0131a/chat',
+            webhookUrl: '___N8N_CHAT_WEBHOOK_URL___',
             initialMessages: [
                 'Hi there! 👋',
                 "I am **Nexus**, Ashoka's Neural Assistant. How can I assist you today?"

@@ -1,2 +1,3 @@
 [build]
+  command = "chmod +x inject-keys.sh && ./inject-keys.sh"
   publish = "netlify-deploy"

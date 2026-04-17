@@ -1,5 +1,5 @@
 :root {
-    --bg: #000000;
+    --bg: #030303;
     --text: #ffffff;
     --accent: #914BF1;
     --accent-vivid: #00D4FF;
@@ -23,6 +23,76 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
+    position: relative;
+}
+
+/* --- Premium Background Logic --- */
+.noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjY1IiBudW1PY3RhdmVzPSIzIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PSIuMDYiLz48L3N2Zz4=');
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.4;
+}
+
+.glow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 50%, #080808 0%, #030303 100%);
+}
+
+.glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.15;
+    animation: orbMove 25s infinite alternate ease-in-out;
+}
+
+.orb-1 {
+    width: 600px;
+    height: 600px;
+    background: var(--accent);
+    top: -10%;
+    left: -10%;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--accent-vivid);
+    bottom: -5%;
+    right: -5%;
+    animation-delay: -5s;
+    animation-duration: 30s;
+}
+
+.orb-3 {
+    width: 400px;
+    height: 400px;
+    background: #914BF1;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    animation-duration: 20s;
+}
+
+@keyframes orbMove {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(5%, 10%) scale(1.1); }
+    100% { transform: translate(-5%, -5%) scale(1); }
 }
 
 body.preloader-active {
